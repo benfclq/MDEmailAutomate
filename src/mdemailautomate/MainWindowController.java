@@ -17,6 +17,7 @@ import javafx.scene.control.*;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.web.WebView;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import javax.swing.JFileChooser;
@@ -34,6 +35,8 @@ public class MainWindowController implements Initializable {
     private Button myButton;
     @FXML //  fx:id="myOuterAnchor"
     private AnchorPane myOuterAnchor;
+    @FXML //  fx:id="myWebView"
+    private WebView myWebView; // Value injected by FXMLLoader
     
     
     @FXML //  fx:id="myList"
@@ -59,7 +62,7 @@ public class MainWindowController implements Initializable {
             
         }
         );
-        
+        myWebView.getEngine().load("http://www.google.com");
     }
     @FXML
     private void handleBen(MouseEvent event) {

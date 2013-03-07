@@ -7,6 +7,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.shape.*?>
+<?import javafx.scene.web.*?>
 
 <AnchorPane id="AnchorPane" fx:id="myOuterAnchor" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml" fx:controller="mdemailautomate.MainWindowController">
   <children>
@@ -15,6 +16,7 @@
         <TextArea id="htmlTextBox" fx:id="myTextArea" prefHeight="185.0" prefWidth="191.0" wrapText="true" GridPane.columnIndex="0" GridPane.columnSpan="1" GridPane.rowIndex="0" GridPane.rowSpan="2" />
         <Button alignment="CENTER" mnemonicParsing="false" onMouseClicked="#handleBen" text="Button" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
         <ListView fx:id="myList" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+        <WebView fx:id="myWebView" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="0" GridPane.rowSpan="2" />
       </children>
       <columnConstraints>
         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
